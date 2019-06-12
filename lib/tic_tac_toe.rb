@@ -43,12 +43,22 @@ class TicTacToe
     input = gets.strip
     index = input_to_index(input)
     cp = current_player                #Double check this line
-    if valid_move?(board, index)
+    if valid_move?(index)
       move(index, cp)
       display_board
     else
       turn
     end
   end
+  
+  def turn_count(board)
+  turn = 0
+  board.each do |space|
+    if space == "X" || space == "O"
+      turn += 1
+    end
+  end
+  return turn
+end
   
 end
