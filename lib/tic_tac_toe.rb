@@ -114,7 +114,12 @@ class TicTacToe
   end
   
   def winner
-    
+    combo = won?
+    if combo
+      @board[combo[0]]
+    else
+      nil
+    end
   end
   
 end
