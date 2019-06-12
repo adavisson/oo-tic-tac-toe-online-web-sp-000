@@ -90,7 +90,11 @@ class TicTacToe
   end
   
   def full?
-    
+    index = -1
+    @board.all? do |idx|
+      index += 1
+      position_taken?(index)
+    end
   end
   
 end
