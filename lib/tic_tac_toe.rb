@@ -89,4 +89,8 @@ class TicTacToe
     winning_combo
   end
   
+  def full?
+    
+  end
+  
 end
