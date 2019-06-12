@@ -80,7 +80,7 @@ class TicTacToe
       pos_2 = @board[win_index_2]
       pos_3 = @board[win_index_3]
       
-      winning_combo = nil
+      winning_combo = false
     
       if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") || (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
         winning_combo = win_combo
